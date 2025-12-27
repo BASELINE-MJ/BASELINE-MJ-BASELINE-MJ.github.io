@@ -1,51 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BASELINE-MJ</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <h1>BASELINE-MJ</h1>
-    <p>Premium Athletic Wear</p>
-  </header>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <h1 class="brand__name">BASELINE-MJ</h1>
+        <p class="brand__tag">Premium athletic essentials</p>
+      </div>
+
+      <nav class="nav">
+        <a href="#shop">Shop</a>
+        <a href="#collections">Collections</a>
+        <a href="#support">Support</a>
+      </nav>
+    </header>
+  </div>
 
   <section class="hero">
-    <h2>Designed for Comfort. Built for Performance.</h2>
-    <p>Order directly through Instagram DM</p>
-    <a class="btn" href="https://instagram.com/YOURINSTAGRAM" target="_blank" rel="noopener">
-      Order on Instagram
-    </a>
-  </section>
+    <div class="container">
+      <div class="hero__grid">
+        <div>
+          <div class="kicker">New season</div>
+          <h2 class="h1">Warm essentials, cut for everyday performance.</h2>
+          <p class="sub">
+            Minimal silhouettes. Heavyweight comfort. Built to look expensive—on purpose.
+            Order through Instagram DM.
+          </p>
 
-  <section class="products">
-    <div class="card">
-      <h3>Sweatpants</h3>
-      <p>$45</p>
-      <a class="btn" href="https://instagram.com/YOURINSTAGRAM" target="_blank" rel="noopener">
-        Order via DM
-      </a>
-    </div>
+          <div class="cta">
+            <a class="btn" href="https://instagram.com/YOURINSTAGRAM" target="_blank" rel="noopener">
+              Discover
+            </a>
+            <a class="btn btn--ghost" href="#shop">
+              Shop basics
+            </a>
+          </div>
+        </div>
 
-    <div class="card">
-      <h3>Hoodie</h3>
-      <p>$60</p>
-      <a class="btn" href="https://instagram.com/YOURINSTAGRAM" target="_blank" rel="noopener">
-        Order via DM
-      </a>
-    </div>
-  </section>
+        <aside class="heroCard" id="collections">
+          <p class="heroCard__title">Drop details</p>
+          <ul class="heroCard__list">
+            <li>Premium warm neutrals</li>
+            <li>Structured fit, clean finish</li>
+            <li>Limited quantities per size</li>
+            <li>Order via Instagram DM</li>
+          </ul>
+        </aside>
+      </div>
 
-  <footer>
-    <p>© <span id="year"></span> BASELINE-MJ</p>
-  </footer>
+      <div class="divider"></div>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+      <div class="sectionTitle">
+        <h2>Shop the look</h2>
+        <p>Featured pieces</p>
+      </div>
 
-</body>
-</html>
+      <section id="shop" class="grid">
+        <article class="card">
+          <div class="card__meta">
+            <h3 class="card__name">Essential Sweatpants</h3>
+            <p class="card__price">$45</p>
+          </div>
+          <p class="card__desc">Heavyweight comfort. Minimal branding. Clean hemline.</p>
+          <div class="card__actions">
+            <a class="btn" href="https://instagram.com/YOURINSTAGRAM" target="_blank" rel="noopener">Order via DM</a>
+            <a class="btn btn--ghost" href="https://instagram.com/YOURINSTAGRAM" target="_blank" rel="noopener">Size guide (DM)</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__meta">
+            <h3 class="card__name">Essential Hoodie</h3>
+            <p class="card__price">$60</p>
+          </div>
+          <p class="card__desc">Structured hood, premium drape, warm neutral palette.</p>
+          <div class="card__actions">
+            <a class="btn" href="https://instagram.com/YOURINSTAGRAM" target="_blank" rel="noopener">Order via DM</a>
+            <a class="btn btn--gh
